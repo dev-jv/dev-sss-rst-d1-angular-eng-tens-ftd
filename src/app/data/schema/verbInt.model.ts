@@ -1,0 +1,30 @@
+export interface VerbInt {
+  _id: string;
+  eBaseForm: string;
+  ePast: string;
+  eParticiple: string;
+  eGerund: string;
+  ePresent: string;
+  sBaseForm: string;
+  sParticiple: string;
+  sGerund: string;
+  sPast: string;
+  sPresent: string;
+  sFuture: string;
+  sConditional: string;
+  spPastI: string;
+  spPastYou: string;
+  spPastUs: string;
+  spPastThey: string;
+  spPresentI: string;
+  spPresentYou: string;
+  spPresentUs: string;
+  spPresentThey: string;
+  spFutureI: string;
+  spFutureYou: string;
+  spFutureUs: string;
+  spFutureThey: string;
+  spConditionalYou: string;
+  spConditionalUs: string;
+  spConditionalThey: string;
+}

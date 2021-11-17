@@ -1,0 +1,4253 @@
+<!--  Version OK-->
+<div style="background-color: white;" class="shadow-sm rounded-3 mt-3 p-3">
+  <div class="flex-row justify-content-between d-flex">
+    <div>
+      <!--      <mat-form-field appearance="outline">-->
+      <!--        <mat-label>Buscar</mat-label>-->
+      <!--        <input matInput>-->
+      <!--        <mat-icon matSuffix>search</mat-icon>-->
+      <!--      </mat-form-field>-->
+    </div>
+    <div>
+      <!--      <button mat-stroked-button color="primary" (click)="openRegister()">-->
+      <button mat-stroked-button color="primary">
+        <mat-icon>add</mat-icon>
+        Agregar
+      </button>
+    </div>
+  </div>
+  <!--  <hr>-->
+  <br>
+
+
+  <!--        <div class="col">-->
+  <!--          <div>-->
+  <!--            <table class="table table-dark table-hover">-->
+  <!--              <thead>-->
+  <!--              <tr>-->
+  <!--                <th scope="col">First</th>-->
+  <!--                <th scope="col">Last</th>-->
+  <!--              </tr>-->
+  <!--              </thead>-->
+  <!--              <tbody>-->
+
+  <!--              </tbody>-->
+  <!--            </table>-->
+  <!--          </div>-->
+  <!--        </div>-->
+
+  <!--        <div class="col">-->
+  <!--          <div>-->
+  <!--            <table class="table table-dark table-hover">-->
+  <!--              <thead>-->
+  <!--              <tr>-->
+  <!--                <th scope="col">First</th>-->
+  <!--                <th scope="col">Last</th>-->
+  <!--              </tr>-->
+  <!--              </thead>-->
+  <!--              <tbody>-->
+
+  <!--              </tbody>-->
+  <!--            </table>-->
+  <!--          </div>-->
+  <!--        </div>-->
+
+
+  <!--        <div class="col">-->
+  <!--          <div>-->
+  <!--            <table class="table table-dark table-hover">-->
+  <!--              <thead>-->
+  <!--              <tr>-->
+  <!--                <th scope="col">First</th>-->
+  <!--                <th scope="col">Last</th>-->
+  <!--              </tr>-->
+  <!--              </thead>-->
+  <!--              <tbody>-->
+
+  <!--              </tbody>-->
+  <!--            </table>-->
+  <!--          </div>-->
+  <!--        </div>-->
+
+  <!--        <div class="col">-->
+  <!--          <div>-->
+  <!--            <table class="table table-dark table-hover">-->
+  <!--              <thead>-->
+  <!--              <tr>-->
+  <!--                <th scope="col">First</th>-->
+  <!--                <th scope="col">Last</th>-->
+  <!--              </tr>-->
+  <!--              </thead>-->
+  <!--              <tbody>-->
+
+  <!--              </tbody>-->
+  <!--            </table>-->
+  <!--          </div>-->
+  <!--        </div>-->
+
+
+  <div *ngFor="let element of dataSource">
+    <div>
+      <div class="row">
+
+        <div class="col">
+          <div>
+            <table class="table table-dark table-hover">
+              <thead>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  I {{element.ePast}}
+                </td>
+                <td>
+                  {{element.spPastI}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You {{element.ePast}}
+                </td>
+                <td>
+                  {{element.spPastYou}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He {{element.ePast}}
+                </td>
+                <td>
+                  Él {{element.sPast}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She {{element.ePast}}
+                </td>
+                <td>
+                  Ella {{element.sPast}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It {{element.ePast}}
+                </td>
+                <td>
+                  Ello {{element.sPast}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We {{element.ePast}}
+                </td>
+                <td>
+                  {{element.spPastUs}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You {{element.ePast}}
+                </td>
+                <td>
+                  Ustedes {{element.spPastThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They {{element.ePast}}
+                </td>
+                <td>
+                  Ellos {{element.spPastThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I didn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Yo no {{element.spPastI}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You didn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Tú no {{element.spPastYou}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He didn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Él no {{element.sPast}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She didn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ella no {{element.sPast}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It didn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ello no {{element.sPast}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We didn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Nosotros no {{element.spPastUs}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You didn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ustedes no {{element.spPastThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They didn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ellos no {{element.spPastThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Did I {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPastI}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Did you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPastYou}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Did he {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sPast}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Did she {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sPast}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Did it {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sPast}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Did we {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPastUs}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Did you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPastThey}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Did they {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPastThey}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Didn't I {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPastI}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Didn't you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPastYou}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Didn't he {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sPast}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Didn't she {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sPast}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Didn't it {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sPast}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Didn't we {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPastUs}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Didn't you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPastThey}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Didn't they {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPastThey}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I was {{element.eGerund}}
+                </td>
+                <td>
+                  Estaba {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You were {{element.eGerund}}
+                </td>
+                <td>
+                  Tú estabas {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He was {{element.eGerund}}
+                </td>
+                <td>
+                  Él estaba {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She was {{element.eGerund}}
+                </td>
+                <td>
+                  Ella estaba {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It was {{element.eGerund}}
+                </td>
+                <td>
+                  Ello estaba {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We were {{element.eGerund}}
+                </td>
+                <td>
+                  Estábamos {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You were {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes estaban {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They were {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos estaban {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I wasn't {{element.eGerund}}
+                </td>
+                <td>
+                  Yo no estaba {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You weren't {{element.eGerund}}
+                </td>
+                <td>
+                  Tú no estabas {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He wasn't {{element.eGerund}}
+                </td>
+                <td>
+                  Él no estaba {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She wasn't {{element.eGerund}}
+                </td>
+                <td>
+                  Ella no estaba {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It wasn't {{element.eGerund}}
+                </td>
+                <td>
+                  Ello no estaba {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We weren't {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros no estaban {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You weren't {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes no estaban {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They weren't {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos no estaban {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Was I {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaba {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Were you {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estabas {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Was he {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaba {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Was she {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaba {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Was it {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaba {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Were we {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estábamos {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Were you {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estában {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Were they {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaban {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wasn't I {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaba {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Weren't you {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estabas {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wasn't he {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaba {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wasn't she {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaba {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wasn't it {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaba {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Weren't we {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estábamos {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Weren't you {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estában {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Weren't they {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaban {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'd {{element.eParticiple}}, I had {{element.eParticiple}}
+                </td>
+                <td>
+                  Había {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd {{element.eParticiple}}, You had {{element.eParticiple}}
+                </td>
+                <td>
+                  Tú habías {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'd {{element.eParticiple}}, He had {{element.eParticiple}}
+                </td>
+                <td>
+                  Él había {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'd {{element.eParticiple}}, She had {{element.eParticiple}}
+                </td>
+                <td>
+                  Ella había {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'd {{element.eParticiple}}, It had {{element.eParticiple}}
+                </td>
+                <td>
+                  Ello había {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'd {{element.eParticiple}}, We had {{element.eParticiple}}
+                </td>
+                <td>
+                  Nosotros habíamos {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd {{element.eParticiple}}, You had {{element.eParticiple}}
+                </td>
+                <td>
+                  Ustedes habían {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'd {{element.eParticiple}}, They had {{element.eParticiple}}
+                </td>
+                <td>
+                  Ellos habían {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I hadn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Yo no había {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You hadn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Tú no habías {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He hadn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Él no había {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She hadn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Ella no había {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It hadn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Ello no había {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We hadn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Nosotros no habíamos {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You hadn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Ustedes no habían {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They hadn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Ellos no habían {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had I {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Había {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had you {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habías {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had he {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Había {{element.sParticiple}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had she {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Había {{element.sParticiple}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had it {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Había {{element.sParticiple}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had we {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habíamos {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had you {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habían {{element.sParticiple}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had they {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habían {{element.sParticiple}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't I {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No había {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't you {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habías {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't he {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No había {{element.sParticiple}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't she {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No había {{element.sParticiple}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't it {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No había {{element.sParticiple}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't we {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habíamos {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't you {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habían {{element.sParticiple}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't they {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habían {{element.sParticiple}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'd been {{element.eGerund}}, I had been {{element.eGerund}}
+                </td>
+                <td>
+                  Había estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd been {{element.eGerund}}, You had been {{element.eGerund}}
+                </td>
+                <td>
+                  Tú habías estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'd been {{element.eGerund}}, He had been {{element.eGerund}}
+                </td>
+                <td>
+                  Él había estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'd been {{element.eGerund}}, She had been {{element.eGerund}}
+                </td>
+                <td>
+                  Ella había estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'd been {{element.eGerund}}, It had been {{element.eGerund}}
+                </td>
+                <td>
+                  Ello había estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'd been {{element.eGerund}}, We had been {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros habíamos estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd been {{element.eGerund}}, You had been {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes habían estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'd been {{element.eGerund}}, They had been {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos habían estado  {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I hadn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Yo no había estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You hadn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Tú no habías estado  {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He hadn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Él no había estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She hadn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Ella no había estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It hadn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Ello no había estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We hadn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros no habíamos estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You hadn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes no habían estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They hadn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos no habían estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had I been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Había estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had you been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habías estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had he been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Había estado {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had she been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Había estado {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had it been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Había estado {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had we been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habíamos estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had you been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habían estado {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Had they been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habían estado {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't I been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No había estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't you been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habías estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't he been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No había estado {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't she been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No había estado {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't it been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No había estado {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't we been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habíamos estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't you been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habían estado {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hadn't they been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habían estado {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col">
+          <div>
+            <table class="table table-dark table-hover">
+              <thead>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  I {{element.eBaseForm}}
+                </td>
+                <td>
+                  Yo {{element.spPresentI}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You {{element.eBaseForm}}
+                </td>
+                <td>
+                  Tú {{element.spPresentYou}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He {{element.ePresent}}
+                </td>
+                <td>
+                  Él {{element.sPresent}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She {{element.ePresent}}
+                </td>
+                <td>
+                  Ella {{element.sPresent}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It {{element.ePresent}}
+                </td>
+                <td>
+                  Ello {{element.sPresent}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We {{element.eBaseForm}}
+                </td>
+                <td>
+                  Nosotros {{element.spPresentUs}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ustedes {{element.spPresentThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ellos {{element.spPresentThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I don't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Yo no {{element.spPresentI}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You don't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Tú no {{element.spPresentYou}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He doesn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Él no {{element.sPresent}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She doesn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ella no {{element.sPresent}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It doesn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ello no {{element.sPresent}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We don't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Nosotros no {{element.spPresentUs}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You don't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ustedes no {{element.spPresentThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They don't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ellos no {{element.spPresentThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Do I {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPresentI}} yo?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Do you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPresentYou}} tú?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Does he {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sPresent}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Does she {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sPresent}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Does it {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sPresent}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Do we {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPresentUs}} nosotros?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Do you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPresentThey}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Do they {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spPresentThey}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Don't I {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPresentI}} yo?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Don't you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPresentYou}} tú?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Doesn't he {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sPresent}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Doesn't she {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sPresent}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Doesn't it {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sPresent}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Don't we {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPresentUs}} nosotros?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Don't you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPresentThey}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Don't they {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spPresentThey}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'm {{element.eGerund}}
+                </td>
+                <td>
+                  Estoy {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You're {{element.eGerund}}
+                </td>
+                <td>
+                  Estás {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He's {{element.eGerund}}
+                </td>
+                <td>
+                  Él está {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She's {{element.eGerund}}
+                </td>
+                <td>
+                  Ella está {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It's {{element.eGerund}}
+                </td>
+                <td>
+                  Ello está {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We're {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros estamos {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You're {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes están {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They're {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos están {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'm not {{element.eGerund}}
+                </td>
+                <td>
+                  Yo no estoy {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You're not {{element.eGerund}}
+                </td>
+                <td>
+                  Tú no estás {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He's not {{element.eGerund}}
+                </td>
+                <td>
+                  Él no está {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She's not {{element.eGerund}}
+                </td>
+                <td>
+                  Ella no está {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It's not {{element.eGerund}}
+                </td>
+                <td>
+                  Ello no está {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We're not {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros no estamos {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You're not {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes no están {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They're not {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos no están {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Am I {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estoy {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Are you {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estás {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Is he {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Está {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Is she {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Está {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Is it {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Está {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Are we {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estamos {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Are you {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Están {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Are they {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Están {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'm not {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estoy {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You're not {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estás {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He's not {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No está {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She's not {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No está {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It's not {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No está {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We're not {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estamos {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You're not {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No están {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They're not {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No están {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I've {{element.eParticiple}}, I have {{element.eParticiple}}
+                </td>
+                <td>
+                  He {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You've {{element.eParticiple}}, You have {{element.eParticiple}}
+                </td>
+                <td>
+                  Has {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He's {{element.eParticiple}}, He has {{element.eParticiple}}
+                </td>
+                <td>
+                  Él ha {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She's {{element.eParticiple}}, She has {{element.eParticiple}}
+                </td>
+                <td>
+                  Ella ha {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It's {{element.eParticiple}}, It has {{element.eParticiple}}
+                </td>
+                <td>
+                  Ello ha {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We've {{element.eParticiple}}, We have {{element.eParticiple}}
+                </td>
+                <td>
+                  Nosotros hemos {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You've {{element.eParticiple}}, You have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ustedes han {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They've {{element.eParticiple}}, They have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ellos han {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I haven't {{element.eParticiple}}
+                </td>
+                <td>
+                  Yo no he {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You haven't {{element.eParticiple}}
+                </td>
+                <td>
+                  Tú no has {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He hasn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Él no ha {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She hasn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Ella no ha {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It hasn't {{element.eParticiple}}
+                </td>
+                <td>
+                  Ello no ha {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We haven't {{element.eParticiple}}
+                </td>
+                <td>
+                  Nosotros no hemos {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You haven't {{element.eParticiple}}
+                </td>
+                <td>
+                  Ustedes no han {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They haven't {{element.eParticiple}}
+                </td>
+                <td>
+                  Ellos no han {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have I {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿He {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have you {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Has {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Has he {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Ha {{element.sParticiple}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Has she {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Ha {{element.sParticiple}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Has it {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Ha {{element.sParticiple}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have we {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Hemos {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have you {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Han {{element.sParticiple}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have they {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Han {{element.sParticiple}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't I {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No he {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't you {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No has {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hasn't he {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No ha {{element.sParticiple}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hasn't she {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No ha {{element.sParticiple}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hasn't it {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No ha {{element.sParticiple}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't we {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No hemos {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't you {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No han {{element.sParticiple}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't they {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No han {{element.sParticiple}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I've been {{element.eGerund}}, I have been {{element.eGerund}}
+                </td>
+                <td>
+                  He estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You've been {{element.eGerund}}, You have been {{element.eGerund}}
+                </td>
+                <td>
+                  Has estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He's been {{element.eGerund}}, He has been {{element.eGerund}}
+                </td>
+                <td>
+                  Él ha estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She's been {{element.eGerund}}, She has been {{element.eGerund}}
+                </td>
+                <td>
+                  Ella ha estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It's been {{element.eGerund}}, It has been {{element.eGerund}}
+                </td>
+                <td>
+                  Ello ha estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We've been {{element.eGerund}}, We have been {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros hemos estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You've been {{element.eGerund}}, You have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes han estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They've been {{element.eGerund}}, They have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos han estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I haven't been {{element.eGerund}}
+                </td>
+                <td>
+                  Yo no he estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You haven't been {{element.eGerund}}
+                </td>
+                <td>
+                  Tú no has estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He hasn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Él no ha estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She hasn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Ella no ha estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It hasn't been {{element.eGerund}}
+                </td>
+                <td>
+                  Ello no ha estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We haven't been {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros no hemos estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You haven't been {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes no han estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They haven't been {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos no han estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have I been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿He estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have you been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Has estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Has he been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Ha estado {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Has she been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Ha estado {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Has it been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Ha estado {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have we been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Hemos estado {{element.sGerund}} nosotros?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have you been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Han estado {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Have they been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Han estado {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't I been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No he estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't you been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No has estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hasn't he been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No ha estado {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hasn't she been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No ha estado {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Hasn't it been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No ha estado {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't we been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No hemos estado {{element.sGerund}} nosotros?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't you been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No han estado {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Haven't they been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No han estado {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col">
+          <div>
+            <table class="table table-dark table-hover">
+              <thead>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  I'll {{element.eBaseForm}}, I will {{element.eBaseForm}}
+                </td>
+                <td>
+                  {{element.spFutureI}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'll {{element.eBaseForm}}, You will {{element.eBaseForm}}
+                </td>
+                <td>
+                  {{element.spFutureYou}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'll {{element.eBaseForm}}, He will {{element.eBaseForm}}
+                </td>
+                <td>
+                  Él {{element.sFuture}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'll {{element.eBaseForm}}, She will {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ella {{element.sFuture}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'll {{element.eBaseForm}}, It will {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ello {{element.sFuture}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'll {{element.eBaseForm}}, We will {{element.eBaseForm}}
+                </td>
+                <td>
+                  {{element.spFutureUs}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'll {{element.eBaseForm}}, You will {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ustedes {{element.spFutureThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'll {{element.eBaseForm}}, They will {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ellos {{element.spFutureThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I won't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Yo no {{element.spFutureI}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You won't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Tú no {{element.spFutureYou}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He won't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Él no {{element.sFuture}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She won't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ella no {{element.sFuture}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It won't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ella no {{element.sFuture}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We won't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Nosotros no {{element.spFutureUs}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You won't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ustedes no {{element.spFutureThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They won't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ellos no {{element.spFutureThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will I {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spFutureI}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spFutureYou}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will he {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sFuture}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will she {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sFuture}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will it {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sFuture}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will we {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spFutureUs}} nosotros?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spFutureThey}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will they {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spFutureThey}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't I {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spFutureI}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spFutureYou}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't he {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sFuture}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't she {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sFuture}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't it {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sFuture}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't we {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spFutureUs}} nosotros?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spFutureThey}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't they {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spFutureThey}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'll be {{element.eGerund}}, I will be {{element.eGerund}}
+                </td>
+                <td>
+                  Estaré {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'll be {{element.eGerund}}, You will be {{element.eGerund}}
+                </td>
+                <td>
+                  Estarás {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'll be {{element.eGerund}}, He will be {{element.eGerund}}
+                </td>
+                <td>
+                  Él estará {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'll be {{element.eGerund}}, She will be {{element.eGerund}}
+                </td>
+                <td>
+                  Ella estará {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'll be {{element.eGerund}}, It will be {{element.eGerund}}
+                </td>
+                <td>
+                  Ello estará {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'll be {{element.eGerund}}, We will be {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros estaremos {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'll be {{element.eGerund}}, You will be {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes estarán {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'll be {{element.eGerund}}, They will be {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos estarán {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I won't be {{element.eGerund}}
+                </td>
+                <td>
+                  Yo no estaré {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You won't be {{element.eGerund}}
+                </td>
+                <td>
+                  Tú no estarás {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He won't be {{element.eGerund}}
+                </td>
+                <td>
+                  Él no estará {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She won't be {{element.eGerund}}
+                </td>
+                <td>
+                  Ella no estará {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It won't be {{element.eGerund}}
+                </td>
+                <td>
+                  Ello no estará {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We won't be {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros no estaremos {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You won't be {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes no estarán {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They won't be {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos no estarán {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will I be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaré {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will you be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estarás {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will he be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estará {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will she be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estará {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will it be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estará {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will we be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaremos  {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will you be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estarán {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will they be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estarán {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't I be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaré {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't you be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estarás {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't he be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estará {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't she be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estará {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't it be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estará {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't we be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaremos  {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't you be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estarán {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't they be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estarán {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'll have {{element.eParticiple}}, I will have {{element.eParticiple}}
+                </td>
+                <td>
+                  Habré {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'll have {{element.eParticiple}}, You will have {{element.eParticiple}}
+                </td>
+                <td>
+                  Habrás {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'll have {{element.eParticiple}}, He will have {{element.eParticiple}}
+                </td>
+                <td>
+                  Él habrá {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'll have {{element.eParticiple}}, She will have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ella habrá {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'll have {{element.eParticiple}}, It will have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ello habrá {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'll have {{element.eParticiple}}, We will have {{element.eParticiple}}
+                </td>
+                <td>
+                  Nosotros habremos {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'll have {{element.eParticiple}}, You will have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ustedes habrán {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'll have {{element.eParticiple}}, They will have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ellos habrán {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I won't have {{element.eParticiple}}
+                </td>
+                <td>
+                  No habré {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You won't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Tú no habrás {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He won't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Él no habrá {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She won't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ella no habrá {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It won't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ello no habrá {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We won't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Nosotros no habremos {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You won't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ustedes no habrán {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They won't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ellos no habrán {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will I have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habré {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will you have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrás {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will he have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrá {{element.sParticiple}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will she have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrá {{element.sParticiple}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will it have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrá {{element.sParticiple}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will we have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habremos {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will you have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrán {{element.sParticiple}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will they have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrán {{element.sParticiple}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't I have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habré {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't you have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrás {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't he have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrá {{element.sParticiple}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't she have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrá {{element.sParticiple}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't it have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrá {{element.sParticiple}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't we have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habremos {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't you have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrán {{element.sParticiple}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't they have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrán {{element.sParticiple}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'll have been {{element.eGerund}}, I will have been {{element.eGerund}}
+                </td>
+                <td>
+                  Habré estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'll have been {{element.eGerund}}, You will have been {{element.eGerund}}
+                </td>
+                <td>
+                  Habrás estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'll have been {{element.eGerund}}, He will have been {{element.eGerund}}
+                </td>
+                <td>
+                  Él habrá estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'll have been {{element.eGerund}}, She will have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ella habrá estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'll have been {{element.eGerund}}, It will have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ello habrá estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'll have been {{element.eGerund}}, We will have been {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros habremos estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'll have been {{element.eGerund}}, You will have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes habrán estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'll have been {{element.eGerund}}, They will have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos habrán estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I won't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Yo no habré estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You won't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Tú no habrás estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He won't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Él no habrá estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She won't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ella no habrá estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It won't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ello no habrá estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We won't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros no habremos estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You won't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes no habrán estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They won't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos no habrán estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will I have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habré estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will you have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrás estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will he have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrá estado {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will she have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrá estado {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will it have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrá estado {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will we have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habremos estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will you have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrán estado {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Will they have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrán estado {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't I have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habré estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't you have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrás estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't he have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrá estado {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't she have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrá estado {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't it have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrá estado {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't we have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habremos estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't you have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrán estado {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Won't they have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrán estado {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+
+        <div class="col">
+          <div>
+            <table class="table table-dark table-hover">
+              <thead>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  I'd {{element.eBaseForm}}, I would {{element.eBaseForm}}
+                </td>
+                <td>
+                  {{element.sConditional}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd {{element.eBaseForm}}, You would {{element.eBaseForm}}
+                </td>
+                <td>
+                  {{element.spConditionalYou}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'd {{element.eBaseForm}}, He would {{element.eBaseForm}}
+                </td>
+                <td>
+                  Él {{element.sConditional}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'd {{element.eBaseForm}}, She would {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ella {{element.sConditional}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'd {{element.eBaseForm}}, It would {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ello {{element.sConditional}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'd {{element.eBaseForm}}, We would {{element.eBaseForm}}
+                </td>
+                <td>
+                  Nosotros {{element.spConditionalUs}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd {{element.eBaseForm}}, You would {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ustedes {{element.spConditionalThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'd {{element.eBaseForm}}, They would {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ellos {{element.spConditionalThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I wouldn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Yo no {{element.sConditional}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You wouldn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Tú no {{element.spConditionalYou}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He wouldn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Él no {{element.sConditional}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She wouldn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ella no {{element.sConditional}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It wouldn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ello no {{element.sConditional}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We wouldn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Nosotros no {{element.spConditionalUs}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You wouldn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ustedes no {{element.spConditionalThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They wouldn't {{element.eBaseForm}}
+                </td>
+                <td>
+                  Ellos no {{element.spConditionalThey}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would I {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sConditional}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spConditionalYou}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would he {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sConditional}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would she {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sConditional}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would it {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.sConditional}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would we {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spConditionalUs}} nosotros?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spConditionalThey}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would they {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿{{element.spConditionalThey}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't I {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sConditional}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spConditionalYou}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't he {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sConditional}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't she {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sConditional}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't it {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.sConditional}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't we {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spConditionalUs}} nosotros?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't you {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spConditionalThey}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't they {{element.eBaseForm}}?
+                </td>
+                <td>
+                  ¿No {{element.spConditionalThey}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'd be {{element.eGerund}}, I would be {{element.eGerund}}
+                </td>
+                <td>
+                  Estaría {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd be {{element.eGerund}}, You would be {{element.eGerund}}
+                </td>
+                <td>
+                  Tú estarías {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'd be {{element.eGerund}}, He would be {{element.eGerund}}
+                </td>
+                <td>
+                  Él estaría {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'd be {{element.eGerund}}, She would be {{element.eGerund}}
+                </td>
+                <td>
+                  Ella estaría {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'd be {{element.eGerund}}, It would be {{element.eGerund}}
+                </td>
+                <td>
+                  Ello estaría {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'd be {{element.eGerund}}, We would be {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros estaríamos {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd be {{element.eGerund}}, You would be {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes estarían {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'd be {{element.eGerund}}, They would be {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos estarían {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I wouldn't be {{element.eGerund}}
+                </td>
+                <td>
+                  Yo no estaría {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You wouldn't be {{element.eGerund}}
+                </td>
+                <td>
+                  Tú no estarías {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He wouldn't be {{element.eGerund}}
+                </td>
+                <td>
+                  Él no estaría {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She wouldn't be {{element.eGerund}}
+                </td>
+                <td>
+                  Ella no estaría {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It wouldn't be {{element.eGerund}}
+                </td>
+                <td>
+                  Ello no estaría {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We wouldn't be {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros no estaríamos {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You wouldn't be {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes no estarían {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They wouldn't be {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos no estarían {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would I be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaría {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would you be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estarías {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would he be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaría {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would she be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaría {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would it be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaría {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would we be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estaríamos {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would you be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estarían {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would they be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Estarían {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't I be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaría {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't you be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estarías {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't he be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaría {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't she be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaría {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't it be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaría {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't we be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estaríamos {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't you be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estarían {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't they be {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No estarían {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'd have {{element.eParticiple}}, I would have {{element.eParticiple}}
+                </td>
+                <td>
+                  Habría {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd have {{element.eParticiple}}, You would have {{element.eParticiple}}
+                </td>
+                <td>
+                  Tú habrías {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'd have {{element.eParticiple}}, He would have {{element.eParticiple}}
+                </td>
+                <td>
+                  Él habría {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'd have {{element.eParticiple}}, She would have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ella habría {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'd have {{element.eParticiple}}, It would have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ello habría {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'd have {{element.eParticiple}}, We would have {{element.eParticiple}}
+                </td>
+                <td>
+                  Nosotros habríamos {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd have {{element.eParticiple}}, You would have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ustedes habrían {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'd have {{element.eParticiple}}, They would have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ellos habrían {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I wouldn't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Yo no habría {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You wouldn't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Tú no habrías {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He wouldn't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Él no habría {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She wouldn't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ella no habría {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It wouldn't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ello no habría {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We wouldn't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Nosotros no habríamos {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You wouldn't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ustedes no habrían {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They wouldn't have {{element.eParticiple}}
+                </td>
+                <td>
+                  Ellos no habrían {{element.sParticiple}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would I have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habría {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would you have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrías {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would he have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habría {{element.sParticiple}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would she have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habría {{element.sParticiple}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would it have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habría {{element.sParticiple}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would we have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habríamos {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would you have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrían {{element.sParticiple}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would they have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿Habrían {{element.sParticiple}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't I have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habría {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't you have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrías {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't he have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habría {{element.sParticiple}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't she have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habría {{element.sParticiple}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't it have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habría {{element.sParticiple}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't we have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habríamos {{element.sParticiple}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't you have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrían {{element.sParticiple}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't they have {{element.eParticiple}}?
+                </td>
+                <td>
+                  ¿No habrían {{element.sParticiple}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I'd have been {{element.eGerund}}, I would have been {{element.eGerund}}
+                </td>
+                <td>
+                  Habría estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd have been {{element.eGerund}}, You would have been {{element.eGerund}}
+                </td>
+                <td>
+                  Tú habrías estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He'd have been {{element.eGerund}}, He would have been {{element.eGerund}}
+                </td>
+                <td>
+                  Él habría estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She'd have been {{element.eGerund}}, She would have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ella habría estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It'd have been {{element.eGerund}}, It would have been {{element.eGerund}}
+                </td>
+                <td>
+                  Él habría estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We'd have been {{element.eGerund}}, We would have been {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros habríamos estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You'd have been {{element.eGerund}}, You would have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes habrían estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They'd have been {{element.eGerund}}, They would have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos habrían estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  I wouldn't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Yo no habría estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You wouldn't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Tú no habrías estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  He wouldn't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Él no habría estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  She wouldn't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ella no habría estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  It wouldn't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ello no habría estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  We wouldn't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Nosotros no habríamos estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  You wouldn't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ustedes no habrían estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  They wouldn't have been {{element.eGerund}}
+                </td>
+                <td>
+                  Ellos no habrían estado {{element.sGerund}}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would I have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habría estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would you have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrías estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would he have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habría estado {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would she have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habría estado {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would it have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habría estado {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would we have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habríamos estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would you have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrían estado {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Would they have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿Habrían estado {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't I have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habría estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't you have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrías estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't he have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habría estado {{element.sGerund}} él?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't she have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habría estado {{element.sGerund}} ella?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't it have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habría estado {{element.sGerund}} ello?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't we have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habríamos estado {{element.sGerund}}?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't you have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrían estado {{element.sGerund}} ustedes?
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Wouldn't they have been {{element.eGerund}}?
+                </td>
+                <td>
+                  ¿No habrían estado {{element.sGerund}} ellos?
+                </td>
+              </tr>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

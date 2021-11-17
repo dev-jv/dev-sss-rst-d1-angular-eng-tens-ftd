@@ -1,0 +1,52 @@
+/*.mat-stepper-horizontal {*/
+/*  margin-top: 8px;*/
+/*}*/
+
+/*.mat-form-field {*/
+/*  margin-top: 16px;*/
+/*}*/
+
+/*.cal {*/
+/*  color: lightslategrey;*/
+/*  font-family: "Microsoft YaHei UI Light";*/
+/*}*/
+
+/*.card-img-top {*/
+/*  width: 86%;*/
+/*  object-fit: cover;*/
+/*}*/
+
+/*.tab {*/
+/*  width: 500px;*/
+/*}*/
+
+/*.tabSup {*/
+/*  width: 2000px;*/
+/*}*/
+
+/*.cdk-virtual-scroll-data-source-example {*/
+/*  display: flex;*/
+/*  overflow-x: scroll;*/
+
+/*  !*max-width: 50rem;*!*/
+/*  !*margin: 0 auto;*!*/
+/*}*/
+
+
+/*.cdk-virtual-scroll-data-source-example .example-viewport {*/
+/*  height: 50px;*/
+/*  width: 90%;*/
+
+/*  !*border: 1px solid black;*!*/
+/*}*/
+
+/*.cdk-virtual-scroll-data-source-example .example-viewport .cdk-virtual-scroll-content-wrapper {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*}*/
+
+/*.cdk-virtual-scroll-data-source-example .example-item {*/
+/*  width: 100px;*/
+/*  !*height: 100%;*!*/
+/*  !*writing-mode: vertical-lr;*!*/
+/*}*/
